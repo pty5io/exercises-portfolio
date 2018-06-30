@@ -1,0 +1,223 @@
+/*  General layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Helvetica ,Arial, sans-serif;
+  text-align: center;
+  background-color: #F2E5E8;
+}
+/* Link styles */
+a {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Sections styles */
+nav {
+  width: 100%;
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  background-color: #7F7793;
+  font-size: 1.2rem;
+  line-height: 50px;
+  text-align: center;
+}
+
+.main-nav {
+  list-style-type: none;
+  margin: 0 20px 0 0;
+  float: right;
+}
+
+ .main-nav li {
+  float: left;
+  padding: 5px 10px 5px;
+  transition: background .5s;
+  border-radius: 10px;
+}
+
+nav li:hover {
+  background-color: #546077;
+}
+
+.name {
+  display: inline-block;
+  float: left;
+  padding: 5px 20px 5px 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+  transition: background .5s;
+}
+
+.name:hover {
+  background-color: #546077;
+}
+
+header {
+  height: 850px;
+  margin-top: 50px;
+  background: linear-gradient(#FFC7C7, transparent 20%),
+              linear-gradient(0deg, #F2E5E8, transparent 40%),
+              #FFC7C7 url('../images/bridge-header.jpeg') no-repeat;
+
+  /* url('images/bridge-header.jpeg'); */
+  background-size: cover;
+  text-align: center;
+}
+
+header .main-logo {
+  margin-top: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: transform .7s;
+}
+
+header .main-logo:hover {
+  transform: rotate(360deg) scale(1.5);
+  background: url('../images/ptysia.jpg') no-repeat;
+  padding-left: 150px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
+header i {
+  font-size: 12rem;
+  margin-top: 75px;
+}
+
+main {
+  width: 70%;
+  min-height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #2F4858;
+}
+
+.card {
+  width: 45%;
+  height: 600px;
+  margin: 150px auto 30px;
+  padding: 40px 100px 40px;
+  max-height: 500px;
+  background-color: white;
+  float: left;
+  border-top: 4px solid white;
+  border-bottom: 4px solid #7F7793;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-align: left;
+  transition: border .2s;
+}
+
+.card h2 {
+  font-size: 2rem;
+}
+
+.card-right {
+  float: right;
+}
+
+.card:hover {
+  border-top: 4px solid #7F7793;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  height: 130px;
+  background-color: #7F7793;
+  color: white;
+  position: relative;
+}
+
+footer li {
+  float: left;
+  padding: 5px 40px;
+}
+
+footer ul {
+  display: inline-block;
+  list-style-type: none;
+  min-height: 50px;
+}
+
+footer i {
+  font-size: 2rem;
+  transition: font-size .2s;
+}
+
+footer i:hover {
+  font-size: 2.5rem;
+}
+
+/* media queries */
+
+@media (max-width: 1785px) and (min-width: 1384px) {
+  main {
+    width: 90%
+  }
+}
+
+@media (max-width: 1390px) {
+  main {
+    width: 100%;
+  }
+
+  .card {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 855px) {
+  .card {
+    width: 100%;
+    float: none;
+    padding: 15px 15px;
+  }
+  header {
+    height: 450px;
+  }
+
+  .fa-chevron-down {
+    display: none;
+  }
+}
+
+@media (max-width: 745px) {
+  .name {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .main-nav {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 463px) {
+  .main-nav li {
+    padding: 5px 2px;
+  }
+}
