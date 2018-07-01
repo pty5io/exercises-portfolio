@@ -86,7 +86,7 @@ header .main-logo {
 
 header .main-logo:hover {
   transform: rotate(360deg) scale(1.5);
-  background: url('../images/ptysia.jpg') no-repeat;
+  background: url('../images/ptysia1.jpg') no-repeat;
   padding-left: 150px;
 }
 
